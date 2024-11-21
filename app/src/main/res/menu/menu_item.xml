@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:title=" "
+        android:icon="@drawable/logo_bg">
+
+        <menu>
+            <item
+                android:id="@+id/feedback"
+                android:title="Feedback"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_feedback_24"/>
+
+            <item
+                android:id="@+id/settings"
+                android:title="Settings"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_settings_24"/>
+
+            <item
+                android:id="@+id/about"
+                android:title="About"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_info_24"/>
+
+            <item
+                android:id="@+id/credentials"
+                android:title="Credentials"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_lock_24"/>
+
+            <item
+                android:id="@+id/privacy_policy"
+                android:title="Privacy Policy"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_privacy_tip_24"/>
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                app:showAsAction="never"
+                android:icon="@drawable/ic_baseline_logout_24" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_sapphire</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue1</item>
+        <item name="colorSecondaryVariant">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/blue_sapphire</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/blue_sapphire</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.BottomNavigation" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_sapphire</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue1</item>
+        <item name="colorSecondaryVariant">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/blue_sapphire</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/blue_sapphire</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MyApplication.NoActionBar">
+        <item name="colorPrimary">@color/blue_sapphire</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue1</item>
+        <item name="colorSecondaryVariant">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/blue_sapphire</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/blue_sapphire</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.MyAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue_sapphire</item>
+        <item name="colorPrimaryVariant">@color/blue1</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/blue_sapphire</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

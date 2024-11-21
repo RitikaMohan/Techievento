@@ -1,0 +1,38 @@
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Repeat this block for each person -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/profile_placeholder"
+                android:contentDescription="@string/profile_image" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Name"
+                android:textAlignment="center"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+        <!-- End Repeat -->
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment"
+    android:id="@+id/fragment_container">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Date -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/cairo_bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/profile_picture"
+                style="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentEnd="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="Profile Picture"
+                android:src="@drawable/logo_bg" />
+    </RelativeLayout>
+
+        <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_edit_text"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:contentDescription="Search Icon"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search your favourite event"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:id="@+id/search_editText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_edit_text"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Filter Icon"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_filter_alt_24"
+                android:id="@+id/filter_icon"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <!-- Categories Heading -->
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/dm_sans_semibold"
+                    android:text="Categories"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+</LinearLayout>
+
+
+        <!-- Categories -->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categories"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+            <Button
+                android:id="@+id/music"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/categories_button"
+                android:fontFamily="@font/cambay"
+                android:padding="2dp"
+                android:text="Music"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/categories_button"
+                android:fontFamily="@font/cambay"
+                android:padding="2dp"
+                android:text="Sports"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/concerts"
+                android:text="Concerts"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/cambay"
+                android:background="@drawable/categories_button"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/fitness"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/categories_button"
+                android:padding="2dp"
+                android:text="Fitness"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/cambay"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/kids"
+                android:text="Kids"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/cambay"
+                android:background="@drawable/categories_button"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </HorizontalScrollView>
+
+        <!-- Events Heading -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/dm_sans_semibold"
+                    android:text="Upcoming Events"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/view_all_upEv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_sapphire"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Upcoming Events -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcoming_events_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <!-- Events For you Heading -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/dm_sans_semibold"
+                    android:text="Events For You"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/view_all_evfy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_sapphire"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--Events Fot You-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/events_for_you_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

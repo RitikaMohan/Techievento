@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_3d"
+        android:elevation="8dp">
+        <!-- Title Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:background="@color/blue_sapphire">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:contentDescription="Back"
+                android:id="@+id/back_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:id="@+id/search_container">
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:contentDescription="Search Icon"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Search your favourite event"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:id="@+id/search_edit_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/custom_edit_text"
+                android:padding="8dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_filter_alt_24"
+                    android:contentDescription="Filter Icon"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:id="@+id/apply_filter"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- RecyclerView for search results -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_container" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name"><i>Techievento</i></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    <string name="google_app_id">1:593289559327:android:13e835084fcae9db1d042a</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="title_activity_nav_menu">Nav_Menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Profile Labels -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="ID">ID</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="phone">Phone</string>
+    <string name="enter_phone">Enter your phone number</string>
+    <string name="save">Save</string>
+
+
+    <string name="search_icon">Search Icon</string>
+    <string name="search">Search</string>
+    <string name="filter_icon">Filter Icon</string>
+    <string name="communities">Communities</string>
+    <string name="breadcrumbs">Breadcrumbs</string>
+
+
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <!-- Add more languages as needed -->
+    </string-array>
+
+    <string-array name="status_options">
+        <item>Online</item>
+        <item>In Event</item>
+        <item>Do Not Disturb</item>
+        <!-- Add more statuses as needed -->
+    </string-array>
+
+</resources>

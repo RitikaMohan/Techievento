@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298079626426",
+    "project_id": "techievento-9f046",
+    "storage_bucket": "techievento-9f046.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298079626426:android:c95cc88752cc211c0e8e83",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaDyWnkRk9rvL2RGUPAfCma5GbVFr5YGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
